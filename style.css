@@ -1,0 +1,117 @@
+.menu {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 1em;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        flex-direction: row;
+    }
+}
+
+.principal {
+    padding-top: 20px;
+    margin-top: 30px;
+
+}
+
+.full-width-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+}
+
+.titulo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 1em;
+
+}
+
+.historia {
+    font-style: italic;
+    font-size: 200%;
+ 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 1em;
+}
+
+ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+}
+
+
+
+ul li {
+    float: left;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: solid;
+}
+
+
+
+body {
+    background-color: #bcb8b1;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(ciri.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boton {
+    border-radius: 10px;
+    padding: 10px 7px;
+    text-decoration: double;
+    color: #fff;
+    background-color: #333;
+    margin: 5px;
+}
+
+.galerias {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+footer {
+    background-color: #333;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+
+
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-section {
+    margin: 10px;
+    padding: 10px;
+}
