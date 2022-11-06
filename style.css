@@ -270,6 +270,16 @@ footer {
   border-radius: 0.3rem;
 }
 
+.game-img {
+  background-image: url(media/fondogame.png);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
 .clean-bg {
   background-image: url(media/shop.jpg);
   min-height: 100vh;
