@@ -67,10 +67,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(media/shop.jpg);
+  background-image: url(media/shop2.avif);
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 .galerias {
@@ -270,6 +271,7 @@ footer {
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 .texto-bio, .texto-titulos {
