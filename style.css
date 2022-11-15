@@ -264,7 +264,7 @@ footer {
 }
 
 .game-img, .clean-bg {
-  background-image: url(media/fondogame.png);
+  background-image: url(media/fondogame2.avif);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
