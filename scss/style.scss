@@ -1,5 +1,15 @@
-@import "variables";
+@import "layout/variables";
+@import "layout/contacto";
 
+.formulario {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+  
+  }
 .menu {
     background-color: #333;
     display: flex;
@@ -78,39 +88,7 @@ li a {
 }
 
 
-body {
-    background-color: #bcb8b1;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url(media/shop2.avif);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    
-}
 
-.galerias {
-
-    font-style: italic;
-    font-size: 100%;
-    color: map-get($colores, color-primario);
-    display: flex;
-    flex-direction: column;
-
-}
-
-footer {
-    background-color: #333;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-    display: flex;
-
-
-}
 
 .footer-links a {
     color: white;
@@ -316,6 +294,7 @@ footer {
 }
 
 
+
 .clean-bg {
     @extend .game-img;
     background-image: url(media/shop.jpg);
@@ -412,4 +391,6 @@ footer {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
+    
+    
 }
