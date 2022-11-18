@@ -1,32 +1,17 @@
 @import "layout/variables";
-@import "layout/contacto";
+@import "layout/foot";
+@import "layout/botones";
 
-.formulario {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  
-  
-  }
-.menu {
-    background-color: #333;
+
+@mixin flex-cover-fixed-repeat-colum-center-100vh {
     display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
     flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    flex: auto;
-
+    background-position: center;
+    min-height: 100vh;
 }
-
-@mixin sizes($margin, $padding) {
-    margin: $margin;
-    padding: $padding;
-}
-
-
-
 
 @media screen and (min-width: 768px) {
     .menu {
@@ -34,119 +19,42 @@
     }
 }
 
-.yt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
 
-.principal {
-    padding-top: 20px;
-    margin-top: 30px;
-
-}
-
-.full-width-image {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-
-}
-
-.historia {
-    font-style: italic;
-    font-size: 100%;
+body {
+    background-color: #bcb8b1;
     color: map-get($colores, color-primario);
-    ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
+    background-image: url(media/shop2.avif);
+    @include flex-cover-fixed-repeat-colum-center-100vh;
 }
 
-ul {
-    overflow: hidden;
-    list-style: none;
-    display: flex;
+.game-img {
+    background-image: url(media/fondogame2.avif);
+    @include flex-cover-fixed-repeat-colum-center-100vh;
 }
 
-
-
-ul li {
-    float: left;
+.texto-bio {
+    padding: 50px;
+    color: map-get($colores, color-fot);
+    text-shadow: 1px 1px 2px map-get($colores, color-fondo);
+    font-weight: bold;
+    text-align: justify;
 }
 
-li a {
-    display: flex;
-    color: map-get($colores, color-primario);
+.texto-titulos {
+    @extend .texto-bio;
+    color: #fff7ce;
     text-align: center;
-    padding: 14px 30px;
-    text-decoration: solid;
+
 }
 
 
 
+.clean-bg {
+    @extend .game-img;
+    background-image: url(media/shop.jpg);
 
-.footer-links a {
-    color: white;
 }
 
-.footer-section {
-    @include sizes(10px, 10px)
-}
-
-.boton.uno::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #751925;
-    position: absolute;
-    z-index: 1;
-    top: -80px;
-    left: 0;
-    transition: .3s ease-in-out all;
-}
-
-.boton.uno:hover::after {
-    top: 0;
-}
-
-.contenedor-botones {
-    width: 100%;
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.boton {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    background: map-get($colores, color-fot);
-    color: map-get($colores, color-fondo);
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s ease all;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-}
-
-.boton span {
-    position: relative;
-    z-index: 2;
-    transition: .3s ease all;
-}
 
 .fadeIn {
     -webkit-animation-name: fadeIn;
@@ -264,42 +172,9 @@ li a {
     border-radius: 0.3rem;
 }
 
-.game-img {
-    background-image: url(media/fondogame2.avif);
-    min-height: 100vh;
-    display: flex;
-    flex-direction:column;
-
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-.texto-bio {
-    padding: 50px 1px;
-    color: map-get($colores, color-fot);
-    text-shadow: 1px 1px 2px black;
-    font-weight: bold;
-    text-align: justify;
-
-
-}
-
-.texto-titulos {
-    @extend .texto-bio;
-    color: #fff7ce;
-    text-align: center;
-
-}
 
 
 
-.clean-bg {
-    @extend .game-img;
-    background-image: url(media/shop.jpg);
-
-}
 
 @-webkit-keyframes bounceIn {
 
@@ -391,6 +266,7 @@ li a {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-    
-    
+
+
+
 }

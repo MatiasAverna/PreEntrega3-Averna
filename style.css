@@ -1,87 +1,3 @@
-.menu {
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  flex: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .menu {
-    flex-direction: row;
-  }
-}
-.yt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-}
-
-.principal {
-  padding-top: 20px;
-  margin-top: 30px;
-}
-
-.full-width-image {
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-}
-
-.historia {
-  font-style: italic;
-  font-size: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-}
-
-ul {
-  overflow: hidden;
-  list-style: none;
-  display: flex;
-}
-
-ul li {
-  float: left;
-}
-
-li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 30px;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-}
-
-body {
-  background-color: #bcb8b1;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url(media/shop2.avif);
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.galerias {
-  font-style: italic;
-  font-size: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
 footer {
   background-color: #333;
   bottom: 0;
@@ -146,6 +62,52 @@ footer {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+  }
+}
+body {
+  background-color: #bcb8b1;
+  color: white;
+  background-image: url(media/shop2.avif);
+  display: flex;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  flex-direction: column;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.game-img, .clean-bg {
+  background-image: url(media/fondogame2.avif);
+  display: flex;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  flex-direction: column;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.texto-bio, .texto-titulos {
+  padding: 50px;
+  color: #c8d6d8;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.texto-titulos {
+  color: #fff7ce;
+  text-align: center;
+}
+
+.clean-bg {
+  background-image: url(media/shop.jpg);
 }
 
 .fadeIn {
@@ -261,34 +223,6 @@ footer {
   padding: 0;
   margin-bottom: 0;
   border-radius: 0.3rem;
-}
-
-.game-img, .clean-bg {
-  background-image: url(media/fondogame2.avif);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.texto-bio, .texto-titulos {
-  padding: 50px 1px;
-  color: #c8d6d8;
-  text-shadow: 1px 1px 2px black;
-  font-weight: bold;
-  text-align: justify;
-}
-
-.texto-titulos {
-  color: #fff7ce;
-  text-align: center;
-}
-
-.clean-bg {
-  background-image: url(media/shop.jpg);
 }
 
 @-webkit-keyframes bounceIn {
